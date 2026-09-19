@@ -1,0 +1,194 @@
+[
+  {
+    "release_path": "code/forecasting/main.py",
+    "source_sha256": "ffe6ef63ddda5db39769805189e1bd39daee29ffd6d516430a59165f7cf5558a",
+    "release_sha256": "7d32a6e3440ee7b57c37265f8dd11366ba24283464263dec5ce6a8207bbda6bd",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/forecasting/model.py",
+    "source_sha256": "1b04ae58253e1364a7628cdbaee5065dd026458c1d46bc59c949ee195f9ba408",
+    "release_sha256": "6d7471aeba3dfe37330ec2b61a8792ff95356e05e4a181767c523fa2697f5122",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/forecasting/wind_main.py",
+    "source_sha256": "764d2f037429c88531e919be57cde2a5eb021edc30ace1fafb219d3122d8041d",
+    "release_sha256": "eac493ea1ecd31838eb6d60e432171974012762e225d3324b4a2486350211415",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/forecasting/wind_model.py",
+    "source_sha256": "872a2f20dd6867352bd94f42b7841e97364d2e58c49bdb8f7de2ce399b91df83",
+    "release_sha256": "0aaf31b670b82014420588b04d6409d4f2a7646f7f324d0cafc2560ba9f619b7",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/forecasting/plot.py",
+    "source_sha256": "2e4f31190743410f3e19d2f82d7eddd1b6a7f898d8c83bd87750b382f9bc01a5",
+    "release_sha256": "58b8ef28dd506ef52a74cc5b3ee8195041a0bf6030d379e0327716493e9b536b",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/forecasting/wind_plot.py",
+    "source_sha256": "2e1c826cea8769d4912d03c284064b139ea032ef8f58eae7399251f35cf6d6ae",
+    "release_sha256": "edef47b194f994fad63b9d985fd4e6c518db9ef62e8f8517906c12faadce7548",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/scheduling/build_validation_group_panels.py",
+    "source_sha256": "a46d833686619698697977b295b8c36116bf552761092ec9b57173c54330beab",
+    "release_sha256": "a0152439f19d8a5390ae42cffa572bac56c883c4089cb57ca6af9ef9f3156f0e",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/scheduling/drone_profiles.py",
+    "source_sha256": "2531ef09254a1b202a5a16c9427763ec341070a12f06e5d03144f431cd7ce4b9",
+    "release_sha256": "55baf467c1b3b7464cdd95b4462e68dbc15bf36c93a407beefaf28c77cf5004c",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/scheduling/energy.py",
+    "source_sha256": "4591c77928ef209a42c7592499627be05e531a620e9a48e84ec870e6ac1b220e",
+    "release_sha256": "0b98e1980bbd2787fe68f7eae8adc9370fd4f743dee8d7f61e50dc3be2cba011",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/scheduling/explore_paths.py",
+    "source_sha256": "2120eec9f5784fb628f0dfc8885230c8ccad019878a8d3d6900a3fcda8723512",
+    "release_sha256": "849338023d11db5e0aa10dfb9d8c15e8ce06cb80aca4b8f25b6bcb7f0602fe46",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/scheduling/io_utils.py",
+    "source_sha256": "534fdf5d25ff309bb648cad180c802afbdc974472e9e9ac1730624947df7ce03",
+    "release_sha256": "42955c57e9149d35a25c9c5ddc0232606097a8947f1bec4c1469c5bb0084a42b",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/legacy/scheduling/manual_mix_project.py",
+    "source_sha256": "8ee5dbefc8cea71503a0dccf152c2366479f1906d0f798f6f060d3e25b7131ef",
+    "release_sha256": "eae1cd42901207e5e3d7e1048370ab64d0b71ccdde1908398acf28a372c6ff18",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/legacy/scheduling/mix_project.py",
+    "source_sha256": "684a8a21f85896e0d5f0ad01222b001f12e93c9ec9b6b69aede85d9371a88fe0",
+    "release_sha256": "b82b810fba8cd26ae8dc9566630fbae5c1e306c72173ef1051d1bfb0b132c216",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/scheduling/planning.py",
+    "source_sha256": "f1fc1f1debff222fc0b4b62115d92a7e8a210ac493038cc49209b49f4b5cfef0",
+    "release_sha256": "dd4fe323ba9d0f0a53d48f77313230206027fa41242c7f0d329e73f6c37a6f1c",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/scheduling/run_manual_validation_matrix.py",
+    "source_sha256": "8c9e85ec6550f032a867517d63a6938887787a8f6d71c2c0e3f1cf30400fc257",
+    "release_sha256": "a0b4b0e8c65c913c87cd50c6a4fe35bfa3cf0c1a3dd2299e2a6bebbf505be86c",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/legacy/scheduling/run_validation_matrix.py",
+    "source_sha256": "2fc3401dd59bc9befbbedf246151bdf31e20c13feba4b72113dc066b6a5c7e68",
+    "release_sha256": "72fccc6630e0ee7c7e985da772583a110026774fa41274e4b933892e5f55ee9f",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/scheduling/scenarios.py",
+    "source_sha256": "ce2aef8f61fdf43e3417a93fa22a7109a712f13e7dcc6a351e6ba63719a8423e",
+    "release_sha256": "76980380c5496078d20d6b834d23383e63d4423770391f2ab69bb1775b4be4f3",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/preprocessing/idealize_flight_logs.py",
+    "source_sha256": "a55811d7561b84a097251554b6392363a7739884f83600e26bc0366527ca26fa",
+    "release_sha256": "8d82acffbbd1bdfd9e601d26e90cbce909e0b79d8ac60275b078a20b568f452d",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/preprocessing/simulate_three_drone_same_soc.py",
+    "source_sha256": "f5910014f0bacc65cb73c3dd7d5d9b64e2ff450e03e3b6480ee1e1a0d288efcc",
+    "release_sha256": "04f111edca058647398122eda99c2e8872ce65ed3b975e9d5e492818c170f3e0",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/legacy/forecasting/wind_main.py",
+    "source_sha256": "764d2f037429c88531e919be57cde2a5eb021edc30ace1fafb219d3122d8041d",
+    "release_sha256": "17b8a8dc844c6068c603cef0276ef87c450dcc4c2338096a6228c1b0764d0bde",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/legacy/forecasting/retrain_pinn_inv3.py",
+    "source_sha256": "36555d640c4a8ecd3c108151f7d22d4f51bfc34c2f93e283bac17dc6c82807f1",
+    "release_sha256": "fee55f494262601702082a23ce2ac10cb9d475f3abaf686b3724615b5bc4057f",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/legacy/forecasting/retrain_pinn_multiseed.py",
+    "source_sha256": "ec22d3f9f45f125ccdb0b60e8e52101c9b066013eb6cb752de5cbfd2a944ad46",
+    "release_sha256": "63a40daf7f0b44fb5282e9dddb23ffc1680c4d93fcc49b0f8b6e6d9abf3acb50",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/legacy/forecasting/retrain_pinn_only.py",
+    "source_sha256": "c8d6b62664baaf4252a0b41a90f8dc6aca09b8e5b727fd33d4aa0231a484a6bb",
+    "release_sha256": "faef7caa8962a0df4ad714bfb20cc0087693be6f78d7a25bcf0cea4fba5cd1c7",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/legacy/forecasting/gen_extreme_0miss.py",
+    "source_sha256": "c9cce458637bd1e5212eb254c82539a8a59e6ba4110a8903dea8c1a5a786c0bf",
+    "release_sha256": "c6d8ca0f5c6b5c443a6ab59743a4baade1de2967def30c9a91758be34b3846c0",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/legacy/forecasting/gen_sweep_inv3.py",
+    "source_sha256": "af192a98ff50dc2db5576050077887eaad6ad1d8398490ccec157f492b5771dd",
+    "release_sha256": "c6140dfbdf164756e10408ae36e7b076dbf00d6472a556dbe445a4570d811793",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "code/legacy/forecasting/eval_metrics.py",
+    "source_sha256": "a5cd7ff6ce0d478aa1a248dbd9ae894d887d43748ce70698c582622405933860",
+    "release_sha256": "727fe0bd31e6944cae129e4a0bc9e97e8f4f824fd1dbed8c4cb4835564f147ec",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "data/experiments/flight/raw_redacted/May-9th-2026-06-19PM-Flight-Airdata-3m.csv",
+    "source_sha256": "4d1ec025f15cd4283981a8e89007ac861af70ef9d2c192410a75d1d6d84cf311",
+    "release_sha256": "148928e62f8ef649a7e5edcb142a31d38ded21ff8354e189e3361276decedb22",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "data/experiments/flight/raw_redacted/May-9th-2026-06-20PM-Flight-Airdata-6m.csv",
+    "source_sha256": "0230b7a1590881938864281c07d6aa011f60751a10f51275cc215f70f74329f9",
+    "release_sha256": "3f74d858f2d66176c039f132fd30f8f07bb63817d22bd9e9d21096aefae4fe2d",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "data/experiments/flight/raw_redacted/May-9th-2026-06-21PM-Flight-Airdata-9m.csv",
+    "source_sha256": "6f3e05a6033995703356e09940dad7e131ac75e63d3b06d994016e8ceedd56b5",
+    "release_sha256": "a53968d6ef0a8f4b566933c070078cd4b91f671dd4fcb10a3d2ae7cc70b19d5c",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "data/experiments/flight/processed/May-9th-2026-06-19PM-Flight-Airdata-3m-idealized.csv",
+    "source_sha256": "19fe63373eed8ce5050d3565d4003237049fd6f5c82d8f95aee1d94b6791b132",
+    "release_sha256": "263c6e0ec5de091116a48a965d565d0ab0e57b86010a633babaaa7914fcecaa6",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "data/experiments/flight/processed/May-9th-2026-06-20PM-Flight-Airdata-6m-idealized.csv",
+    "source_sha256": "1af65ca54bb2a932b6d96ca97282a38dd81740fe9feb3540d6880bb0e08fa66c",
+    "release_sha256": "f0fd0edcacae71fbe3813e93d96c98767f451bc3d8ab681bcbbd21d4bb138dd3",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  },
+  {
+    "release_path": "data/experiments/flight/processed/May-9th-2026-06-21PM-Flight-Airdata-9m-idealized.csv",
+    "source_sha256": "c2d44559d47ca8b75ed4fdd770c47b53ed9f74bb23e905d1f19f6394a6deb557",
+    "release_sha256": "71ec075c29f9cecd79678999c7bb01da0b27f8729a4c42b4b6006a89981bac9c",
+    "description": "See VERSION_NOTES.md for v1 changes and REVIEW_V2.md for English comments, guarded historical entries, and reviewed behavior. Data redaction, where applicable, is recorded in source_manifest.json."
+  }
+]

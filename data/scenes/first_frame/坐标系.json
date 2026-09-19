@@ -1,0 +1,26 @@
+{
+  "image_name": "first_frame.jpg",
+  "ellipse_annotation": "overall_ellipse.json",
+  "scene_annotation": "overall_scene_annotations.json",
+  "scale_source": "地形边界.json",
+  "pixel_per_cm": 1.4270178560853264,
+  "cm_per_pixel": 0.7007620792799711,
+  "bounding_box": {
+    "left_px": 274,
+    "right_px": 3482,
+    "top_px": 14,
+    "bottom_px": 2208,
+    "width_px": 3208,
+    "height_px": 2194,
+    "width_cm": 2248.0447503301475,
+    "height_cm": 1537.4720019402566
+  },
+  "origin_pixel": [
+    274,
+    2208
+  ],
+  "formula": {
+    "real_x_cm": "(px - 274) * 0.70076208",
+    "real_y_cm": "(2208 - py) * 0.70076208"
+  }
+}

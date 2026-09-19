@@ -1,0 +1,68 @@
+[
+  {
+    "release_path": "code/forecasting/main.py",
+    "source_sha256": "ffe6ef63ddda5db39769805189e1bd39daee29ffd6d516430a59165f7cf5558a",
+    "release_sha256": "cfa2416bb9316f372ccf770834da8f79044dc2d29bc248dc5ea6134eb433e695",
+    "description": "Path, CLI, output bookkeeping, cache, or pandas compatibility edit; see VERSION_NOTES.md."
+  },
+  {
+    "release_path": "code/forecasting/wind_main.py",
+    "source_sha256": "764d2f037429c88531e919be57cde2a5eb021edc30ace1fafb219d3122d8041d",
+    "release_sha256": "2ca2308be81656ecdb97590c357f2154343f1929e8135bc722db7bccbe14d0c3",
+    "description": "Path, CLI, output bookkeeping, cache, or pandas compatibility edit; see VERSION_NOTES.md."
+  },
+  {
+    "release_path": "code/forecasting/plot.py",
+    "source_sha256": "2e4f31190743410f3e19d2f82d7eddd1b6a7f898d8c83bd87750b382f9bc01a5",
+    "release_sha256": "58b8ef28dd506ef52a74cc5b3ee8195041a0bf6030d379e0327716493e9b536b",
+    "description": "Path, CLI, output bookkeeping, cache, or pandas compatibility edit; see VERSION_NOTES.md."
+  },
+  {
+    "release_path": "code/forecasting/wind_plot.py",
+    "source_sha256": "2e1c826cea8769d4912d03c284064b139ea032ef8f58eae7399251f35cf6d6ae",
+    "release_sha256": "edef47b194f994fad63b9d985fd4e6c518db9ef62e8f8517906c12faadce7548",
+    "description": "Path, CLI, output bookkeeping, cache, or pandas compatibility edit; see VERSION_NOTES.md."
+  },
+  {
+    "release_path": "code/scheduling/build_validation_group_panels.py",
+    "source_sha256": "a46d833686619698697977b295b8c36116bf552761092ec9b57173c54330beab",
+    "release_sha256": "a0152439f19d8a5390ae42cffa572bac56c883c4089cb57ca6af9ef9f3156f0e",
+    "description": "Path, CLI, output bookkeeping, cache, or pandas compatibility edit; see VERSION_NOTES.md."
+  },
+  {
+    "release_path": "code/scheduling/drone_profiles.py",
+    "source_sha256": "2531ef09254a1b202a5a16c9427763ec341070a12f06e5d03144f431cd7ce4b9",
+    "release_sha256": "55baf467c1b3b7464cdd95b4462e68dbc15bf36c93a407beefaf28c77cf5004c",
+    "description": "Path, CLI, output bookkeeping, cache, or pandas compatibility edit; see VERSION_NOTES.md."
+  },
+  {
+    "release_path": "code/scheduling/io_utils.py",
+    "source_sha256": "534fdf5d25ff309bb648cad180c802afbdc974472e9e9ac1730624947df7ce03",
+    "release_sha256": "42955c57e9149d35a25c9c5ddc0232606097a8947f1bec4c1469c5bb0084a42b",
+    "description": "Path, CLI, output bookkeeping, cache, or pandas compatibility edit; see VERSION_NOTES.md."
+  },
+  {
+    "release_path": "code/scheduling/run_manual_validation_matrix.py",
+    "source_sha256": "8c9e85ec6550f032a867517d63a6938887787a8f6d71c2c0e3f1cf30400fc257",
+    "release_sha256": "64d837f2a30c225af1a60bb95865d12c760f7e00a5f7cfb670dedf891f905f5c",
+    "description": "Path, CLI, output bookkeeping, cache, or pandas compatibility edit; see VERSION_NOTES.md."
+  },
+  {
+    "release_path": "code/scheduling/scenarios.py",
+    "source_sha256": "ce2aef8f61fdf43e3417a93fa22a7109a712f13e7dcc6a351e6ba63719a8423e",
+    "release_sha256": "3ebd78981e9802a58dc1095f23f87dbc8744d61c34c4414796180d8b2bf78a34",
+    "description": "Path, CLI, output bookkeeping, cache, or pandas compatibility edit; see VERSION_NOTES.md."
+  },
+  {
+    "release_path": "code/preprocessing/idealize_flight_logs.py",
+    "source_sha256": "a55811d7561b84a097251554b6392363a7739884f83600e26bc0366527ca26fa",
+    "release_sha256": "8d82acffbbd1bdfd9e601d26e90cbce909e0b79d8ac60275b078a20b568f452d",
+    "description": "Path, CLI, output bookkeeping, cache, or pandas compatibility edit; see VERSION_NOTES.md."
+  },
+  {
+    "release_path": "code/preprocessing/simulate_three_drone_same_soc.py",
+    "source_sha256": "f5910014f0bacc65cb73c3dd7d5d9b64e2ff450e03e3b6480ee1e1a0d288efcc",
+    "release_sha256": "04f111edca058647398122eda99c2e8872ce65ed3b975e9d5e492818c170f3e0",
+    "description": "Path, CLI, output bookkeeping, cache, or pandas compatibility edit; see VERSION_NOTES.md."
+  }
+]

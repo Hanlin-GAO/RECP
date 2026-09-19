@@ -1,0 +1,221 @@
+{
+  "description": "The current checksum and this index are excluded from their own change index. No prior artifact was deleted.",
+  "files": [
+    {
+      "path": "code/forecasting/main.py",
+      "status": "changed",
+      "v1_sha256": "cfa2416bb9316f372ccf770834da8f79044dc2d29bc248dc5ea6134eb433e695",
+      "v2_sha256": "7d32a6e3440ee7b57c37265f8dd11366ba24283464263dec5ce6a8207bbda6bd"
+    },
+    {
+      "path": "code/forecasting/model.py",
+      "status": "changed",
+      "v1_sha256": "1b04ae58253e1364a7628cdbaee5065dd026458c1d46bc59c949ee195f9ba408",
+      "v2_sha256": "6d7471aeba3dfe37330ec2b61a8792ff95356e05e4a181767c523fa2697f5122"
+    },
+    {
+      "path": "code/forecasting/reviewed_protocol.py",
+      "status": "added",
+      "v1_sha256": null,
+      "v2_sha256": "969b78cbd3913d561f918ca519b57f5e4713a61ba91e3e8c014bd18e4b426d07"
+    },
+    {
+      "path": "code/forecasting/wind_main.py",
+      "status": "changed",
+      "v1_sha256": "2ca2308be81656ecdb97590c357f2154343f1929e8135bc722db7bccbe14d0c3",
+      "v2_sha256": "eac493ea1ecd31838eb6d60e432171974012762e225d3324b4a2486350211415"
+    },
+    {
+      "path": "code/forecasting/wind_model.py",
+      "status": "changed",
+      "v1_sha256": "872a2f20dd6867352bd94f42b7841e97364d2e58c49bdb8f7de2ce399b91df83",
+      "v2_sha256": "0aaf31b670b82014420588b04d6409d4f2a7646f7f324d0cafc2560ba9f619b7"
+    },
+    {
+      "path": "code/legacy/forecasting/eval_metrics.py",
+      "status": "changed",
+      "v1_sha256": "a5cd7ff6ce0d478aa1a248dbd9ae894d887d43748ce70698c582622405933860",
+      "v2_sha256": "727fe0bd31e6944cae129e4a0bc9e97e8f4f824fd1dbed8c4cb4835564f147ec"
+    },
+    {
+      "path": "code/legacy/forecasting/gen_extreme_0miss.py",
+      "status": "changed",
+      "v1_sha256": "c9cce458637bd1e5212eb254c82539a8a59e6ba4110a8903dea8c1a5a786c0bf",
+      "v2_sha256": "c6d8ca0f5c6b5c443a6ab59743a4baade1de2967def30c9a91758be34b3846c0"
+    },
+    {
+      "path": "code/legacy/forecasting/gen_sweep_inv3.py",
+      "status": "changed",
+      "v1_sha256": "af192a98ff50dc2db5576050077887eaad6ad1d8398490ccec157f492b5771dd",
+      "v2_sha256": "c6140dfbdf164756e10408ae36e7b076dbf00d6472a556dbe445a4570d811793"
+    },
+    {
+      "path": "code/legacy/forecasting/retrain_pinn_inv3.py",
+      "status": "changed",
+      "v1_sha256": "36555d640c4a8ecd3c108151f7d22d4f51bfc34c2f93e283bac17dc6c82807f1",
+      "v2_sha256": "fee55f494262601702082a23ce2ac10cb9d475f3abaf686b3724615b5bc4057f"
+    },
+    {
+      "path": "code/legacy/forecasting/retrain_pinn_multiseed.py",
+      "status": "changed",
+      "v1_sha256": "ec22d3f9f45f125ccdb0b60e8e52101c9b066013eb6cb752de5cbfd2a944ad46",
+      "v2_sha256": "63a40daf7f0b44fb5282e9dddb23ffc1680c4d93fcc49b0f8b6e6d9abf3acb50"
+    },
+    {
+      "path": "code/legacy/forecasting/retrain_pinn_only.py",
+      "status": "changed",
+      "v1_sha256": "c8d6b62664baaf4252a0b41a90f8dc6aca09b8e5b727fd33d4aa0231a484a6bb",
+      "v2_sha256": "faef7caa8962a0df4ad714bfb20cc0087693be6f78d7a25bcf0cea4fba5cd1c7"
+    },
+    {
+      "path": "code/legacy/forecasting/wind_main.py",
+      "status": "changed",
+      "v1_sha256": "764d2f037429c88531e919be57cde2a5eb021edc30ace1fafb219d3122d8041d",
+      "v2_sha256": "17b8a8dc844c6068c603cef0276ef87c450dcc4c2338096a6228c1b0764d0bde"
+    },
+    {
+      "path": "code/legacy/README.md",
+      "status": "changed",
+      "v1_sha256": "0727753efde79022e5fa1f38f65569c5880e775b5ccbfcbffe1cd3d01771f0cd",
+      "v2_sha256": "fe095eb2c13578c6e36cd64a5027e4bb98f6db403078a7493de973040c590964"
+    },
+    {
+      "path": "code/legacy/scheduling/manual_mix_project.py",
+      "status": "changed",
+      "v1_sha256": "8ee5dbefc8cea71503a0dccf152c2366479f1906d0f798f6f060d3e25b7131ef",
+      "v2_sha256": "eae1cd42901207e5e3d7e1048370ab64d0b71ccdde1908398acf28a372c6ff18"
+    },
+    {
+      "path": "code/legacy/scheduling/mix_project.py",
+      "status": "changed",
+      "v1_sha256": "684a8a21f85896e0d5f0ad01222b001f12e93c9ec9b6b69aede85d9371a88fe0",
+      "v2_sha256": "b82b810fba8cd26ae8dc9566630fbae5c1e306c72173ef1051d1bfb0b132c216"
+    },
+    {
+      "path": "code/legacy/scheduling/run_validation_matrix.py",
+      "status": "changed",
+      "v1_sha256": "2fc3401dd59bc9befbbedf246151bdf31e20c13feba4b72113dc066b6a5c7e68",
+      "v2_sha256": "72fccc6630e0ee7c7e985da772583a110026774fa41274e4b933892e5f55ee9f"
+    },
+    {
+      "path": "code/scheduling/energy.py",
+      "status": "changed",
+      "v1_sha256": "4591c77928ef209a42c7592499627be05e531a620e9a48e84ec870e6ac1b220e",
+      "v2_sha256": "0b98e1980bbd2787fe68f7eae8adc9370fd4f743dee8d7f61e50dc3be2cba011"
+    },
+    {
+      "path": "code/scheduling/explore_paths.py",
+      "status": "changed",
+      "v1_sha256": "2120eec9f5784fb628f0dfc8885230c8ccad019878a8d3d6900a3fcda8723512",
+      "v2_sha256": "849338023d11db5e0aa10dfb9d8c15e8ce06cb80aca4b8f25b6bcb7f0602fe46"
+    },
+    {
+      "path": "code/scheduling/planning.py",
+      "status": "changed",
+      "v1_sha256": "f1fc1f1debff222fc0b4b62115d92a7e8a210ac493038cc49209b49f4b5cfef0",
+      "v2_sha256": "dd4fe323ba9d0f0a53d48f77313230206027fa41242c7f0d329e73f6c37a6f1c"
+    },
+    {
+      "path": "code/scheduling/run_manual_validation_matrix.py",
+      "status": "changed",
+      "v1_sha256": "64d837f2a30c225af1a60bb95865d12c760f7e00a5f7cfb670dedf891f905f5c",
+      "v2_sha256": "a0b4b0e8c65c913c87cd50c6a4fe35bfa3cf0c1a3dd2299e2a6bebbf505be86c"
+    },
+    {
+      "path": "code/scheduling/scenarios.py",
+      "status": "changed",
+      "v1_sha256": "3ebd78981e9802a58dc1095f23f87dbc8744d61c34c4414796180d8b2bf78a34",
+      "v2_sha256": "76980380c5496078d20d6b834d23383e63d4423770391f2ab69bb1775b4be4f3"
+    },
+    {
+      "path": "data/README.md",
+      "status": "changed",
+      "v1_sha256": "14eebf0e0bf18162a28a4e65b145bf8e87f37fbedf55ac60199b4ae40e63ee54",
+      "v2_sha256": "5c7b45ec468e520a8fcda0bd8603657ddd690a1647a29bdf042467388bf1ba85"
+    },
+    {
+      "path": "provenance/history/v1_packaging_changes.json",
+      "status": "added",
+      "v1_sha256": null,
+      "v2_sha256": "dcac58923af888ca6eb49d0d95e91b4fd14956ac0caea7a0761d996d58dd39ad"
+    },
+    {
+      "path": "provenance/history/v1_SHA256SUMS.csv",
+      "status": "added",
+      "v1_sha256": null,
+      "v2_sha256": "d972afa8e3c4609302b481f4086843446a8e72ce3c6a74ebecec4a4ef93292a1"
+    },
+    {
+      "path": "provenance/packaging_changes.json",
+      "status": "changed",
+      "v1_sha256": "dcac58923af888ca6eb49d0d95e91b4fd14956ac0caea7a0761d996d58dd39ad",
+      "v2_sha256": "88b2920a768bcf406442868d2a5d2385e3a4fe2802cd789d5d84db030cce1438"
+    },
+    {
+      "path": "provenance/REVIEW_V2.md",
+      "status": "added",
+      "v1_sha256": null,
+      "v2_sha256": "657ecefb4ad848cd09a8b200f27c3b386649dda756fce1c951bfb60d95b746b5"
+    },
+    {
+      "path": "provenance/reviewed_archived_model_check.json",
+      "status": "added",
+      "v1_sha256": null,
+      "v2_sha256": "bdbdd57ad443229c0b9481962ec2cdc1f765805d496e6bd88ef3a71c07c17a12"
+    },
+    {
+      "path": "provenance/reviewed_data_audits.json",
+      "status": "added",
+      "v1_sha256": null,
+      "v2_sha256": "2e7a1f32ea9d7f3391940f88bf29a56c99c2acf3e60ba1efa0e4006cde6d1bc4"
+    },
+    {
+      "path": "provenance/reviewed_verification.json",
+      "status": "added",
+      "v1_sha256": null,
+      "v2_sha256": "7e10c9bb263ee4493bab10e7381acd4fe1a93c8cbc8a180a39eefb9876d39cb8"
+    },
+    {
+      "path": "provenance/VERIFICATION.md",
+      "status": "changed",
+      "v1_sha256": "c6f74861d40ee110f061fbcbc67a1051154f41733cfa2cfa7358f0b4493fbef7",
+      "v2_sha256": "4ce8efb803723343e9fbf0efb1fc6756a58df11cc3b1ef036722d848c1c02944"
+    },
+    {
+      "path": "provenance/VERSION_NOTES.md",
+      "status": "changed",
+      "v1_sha256": "1b729aad43cc9f57b4c0389da21044fb7f955aa341f7dce53fa873f0984092d0",
+      "v2_sha256": "78911b5febe91efe0b0d4e8dc2ab32945de8061da2430ce47f6496092e2a7319"
+    },
+    {
+      "path": "README.md",
+      "status": "changed",
+      "v1_sha256": "f26ae5e20702be333ab4ca6ef310258792460c860135674c9bad8a07668f5c3a",
+      "v2_sha256": "196dbe2e16480bd6d2e56dba7c3838c74160653f0203d27734afa42635f1e362"
+    },
+    {
+      "path": "README_zh.md",
+      "status": "changed",
+      "v1_sha256": "dbe5cd38996999cd433b78ee95a65e4c28983ee65d5536b56f560cf902f67c5d",
+      "v2_sha256": "ba90845411b6bea1a47f433c21da0924dfff9bfec760e0038f48b0aff20ef897"
+    },
+    {
+      "path": "scripts/check_protocol.py",
+      "status": "added",
+      "v1_sha256": null,
+      "v2_sha256": "26e9c1a2ff4596500487436161e6ce26d80e7481f4a49b3edbaecb5516cb2331"
+    },
+    {
+      "path": "scripts/predict_reviewed.py",
+      "status": "added",
+      "v1_sha256": null,
+      "v2_sha256": "a64c136851e10bef8ef778d818d8e912ff722d79097034ec73e19e11e07c95a6"
+    },
+    {
+      "path": "scripts/reproduce.py",
+      "status": "changed",
+      "v1_sha256": "324ed66c31d69c02f9d60cd9dba2091fe31775ed8d73546a224b6a93a127b532",
+      "v2_sha256": "dc1cccac8cd294c0249c76e988576febf09781058fefe07184810fc2d7b6fa37"
+    }
+  ]
+}

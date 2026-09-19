@@ -1,0 +1,220 @@
+{
+  "scope": "Software verification only; not new paper performance results.",
+  "regression": {
+    "tests": 11,
+    "passed": true,
+    "log": "test_all_architectures_accept_reviewed_features (release_protocol_checks.ProtocolChecks.test_all_architectures_accept_reviewed_features) ... ok\ntest_all_comments_and_docstrings_are_english (release_protocol_checks.ProtocolChecks.test_all_comments_and_docstrings_are_english) ... ok\ntest_empty_subset_metrics_remain_empty (release_protocol_checks.ProtocolChecks.test_empty_subset_metrics_remain_empty) ... ok\ntest_equal_load_comparison_uses_identical_traces (release_protocol_checks.ProtocolChecks.test_equal_load_comparison_uses_identical_traces) ... ok\ntest_future_data_cannot_change_training_statistics (release_protocol_checks.ProtocolChecks.test_future_data_cannot_change_training_statistics) ... ok\ntest_legacy_scripts_fail_before_running_experiments (release_protocol_checks.ProtocolChecks.test_legacy_scripts_fail_before_running_experiments) ... ok\ntest_masking_reaches_physics_and_temporal_inputs (release_protocol_checks.ProtocolChecks.test_masking_reaches_physics_and_temporal_inputs) ... ok\ntest_masks_are_repeatable (release_protocol_checks.ProtocolChecks.test_masks_are_repeatable) ... ok\ntest_splits_share_no_raw_observation_interval (release_protocol_checks.ProtocolChecks.test_splits_share_no_raw_observation_interval) ... ok\ntest_training_selects_without_test_argument (release_protocol_checks.ProtocolChecks.test_training_selects_without_test_argument) ... ok\ntest_weather_bins_do_not_use_future_observations (release_protocol_checks.ProtocolChecks.test_weather_bins_do_not_use_future_observations) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 4.946s\n\nOK\n"
+  },
+  "unchanged_artifacts": 484,
+  "original_source_files_hash_checked": 517,
+  "development_training": [
+    {
+      "domain": "pv",
+      "source": "Inverter_1",
+      "epochs": 1,
+      "seeds": [
+        42
+      ],
+      "models": [
+        "dnn",
+        "pinn"
+      ],
+      "all_requested_runs_completed": true,
+      "metric_records_written": 32,
+      "protocol": {
+        "config": {
+          "version": "reviewed_v2",
+          "window": 24,
+          "horizon": 1,
+          "epochs": 1,
+          "patience": 30,
+          "hidden": 64,
+          "layers": 2,
+          "dropout": 0.2,
+          "learning_rate": 0.0005,
+          "batch_size": 256,
+          "seeds": [
+            42
+          ],
+          "models": [
+            "dnn",
+            "pinn"
+          ],
+          "missing_fractions": [
+            0.0,
+            0.1,
+            0.3,
+            0.5
+          ],
+          "masking_seed": 20260913,
+          "device": "cpu",
+          "development": true
+        },
+        "domain": "pv",
+        "sources": [
+          "Inverter_1"
+        ],
+        "training_rule": "validation-only selection; report every source/model/seed",
+        "source_scope": "explicit subset; not an all-source benchmark",
+        "code_sha256": {
+          "reviewed_protocol.py": "969b78cbd3913d561f918ca519b57f5e4713a61ba91e3e8c014bd18e4b426d07",
+          "model.py": "6d7471aeba3dfe37330ec2b61a8792ff95356e05e4a181767c523fa2697f5122",
+          "wind_model.py": "0aaf31b670b82014420588b04d6409d4f2a7646f7f324d0cafc2560ba9f619b7"
+        },
+        "environment": {
+          "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+          "packages": {
+            "numpy": "2.3.5",
+            "pandas": "3.0.1",
+            "torch": "2.14.0+cpu",
+            "openpyxl": "3.1.5"
+          },
+          "torch_threads": 4,
+          "device": "cpu"
+        }
+      }
+    },
+    {
+      "domain": "wind",
+      "source": "Turbine_1",
+      "epochs": 1,
+      "seeds": [
+        42
+      ],
+      "models": [
+        "dnn",
+        "pinn"
+      ],
+      "all_requested_runs_completed": true,
+      "metric_records_written": 32,
+      "protocol": {
+        "config": {
+          "version": "reviewed_v2",
+          "window": 24,
+          "horizon": 1,
+          "epochs": 1,
+          "patience": 30,
+          "hidden": 64,
+          "layers": 2,
+          "dropout": 0.2,
+          "learning_rate": 0.0005,
+          "batch_size": 256,
+          "seeds": [
+            42
+          ],
+          "models": [
+            "dnn",
+            "pinn"
+          ],
+          "missing_fractions": [
+            0.0,
+            0.1,
+            0.3,
+            0.5
+          ],
+          "masking_seed": 20260913,
+          "device": "cpu",
+          "development": true
+        },
+        "domain": "wind",
+        "sources": [
+          "Turbine_1"
+        ],
+        "training_rule": "validation-only selection; report every source/model/seed",
+        "source_scope": "explicit subset; not an all-source benchmark",
+        "code_sha256": {
+          "reviewed_protocol.py": "969b78cbd3913d561f918ca519b57f5e4713a61ba91e3e8c014bd18e4b426d07",
+          "model.py": "6d7471aeba3dfe37330ec2b61a8792ff95356e05e4a181767c523fa2697f5122",
+          "wind_model.py": "0aaf31b670b82014420588b04d6409d4f2a7646f7f324d0cafc2560ba9f619b7"
+        },
+        "environment": {
+          "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+          "packages": {
+            "numpy": "2.3.5",
+            "pandas": "3.0.1",
+            "torch": "2.14.0+cpu",
+            "openpyxl": "3.1.5"
+          },
+          "torch_threads": 4,
+          "device": "cpu"
+        }
+      }
+    }
+  ],
+  "reviewed_prediction_export": [
+    {
+      "domain": "pv",
+      "grid_predictions": 17544,
+      "valid_target_predictions_compared": 5268,
+      "max_abs_difference": 0.0020000000004074536,
+      "frozen_statistics": true,
+      "hashes_verified": true
+    },
+    {
+      "domain": "wind",
+      "grid_predictions": 5832,
+      "valid_target_predictions_compared": 5666,
+      "max_abs_difference": 7.999999994012796e-06,
+      "frozen_statistics": true,
+      "hashes_verified": true
+    }
+  ],
+  "schedule": {
+    "group": "G3",
+    "protocol": "fixed_load",
+    "scope": "Offline replay with archived models; not an independent forecasting test.",
+    "cases": [
+      {
+        "case": "actual_generation",
+        "vehicle_columns": [
+          "mor7",
+          "mor8",
+          "mor9"
+        ],
+        "drone_columns": [
+          "mor7",
+          "mor8",
+          "mor9"
+        ],
+        "station_scale_ratios": [
+          3.982952961325527e-06,
+          0.00212164223595632,
+          3.998480577380596e-06
+        ],
+        "rows": 10600,
+        "finite_histories": true,
+        "charging_rows": 7374
+      },
+      {
+        "case": "predicted_generation",
+        "vehicle_columns": [
+          "mor7",
+          "mor8",
+          "mor9"
+        ],
+        "drone_columns": [
+          "mor7",
+          "mor8",
+          "mor9"
+        ],
+        "station_scale_ratios": [
+          3.982952961325527e-06,
+          0.00212164223595632,
+          3.998480577380596e-06
+        ],
+        "rows": 10600,
+        "finite_histories": true,
+        "charging_rows": 7360
+      }
+    ]
+  },
+  "archived_model_count_checked": 36,
+  "not_completed": [
+    "Full reviewed training matrix",
+    "Independent unseen data evaluation",
+    "Full fixed-load scheduling matrix",
+    "GPU validation",
+    "Hardware validation",
+    "Dataset redistribution and code-license clearance"
+  ]
+}

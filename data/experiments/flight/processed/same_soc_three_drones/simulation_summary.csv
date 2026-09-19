@@ -1,0 +1,4 @@
+﻿label,target_height_m,output_csv,total_time_min,completed_cycles,average_power_w,average_current_a,start_voltage_v,end_voltage_v,battery_capacity_wh,voltage_slope,voltage_intercept
+3m,3.0,3m_same_soc_95_to_10.csv,36.147,46,90.924,6.304,16.998,12.121,64.439,0.057375,11.54739
+6m,6.0,6m_same_soc_95_to_10.csv,35.185,44,93.392,6.476,16.998,12.121,64.439,0.057375,11.54739
+9m,9.0,9m_same_soc_95_to_10.csv,35.675,44,92.112,6.387,16.998,12.121,64.439,0.057375,11.54739

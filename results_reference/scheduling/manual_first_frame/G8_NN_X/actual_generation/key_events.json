@@ -1,0 +1,136 @@
+{
+  "rovers": [
+    {
+      "name": "Explore-Inner",
+      "type": "explore",
+      "final_soc": 0.5874785983187099,
+      "final_mode": "WORK",
+      "first_modes": {},
+      "completion_count": 10122
+    },
+    {
+      "name": "Explore-Mid",
+      "type": "explore",
+      "final_soc": 0.3048487138755162,
+      "final_mode": "WAIT_PV",
+      "first_modes": {
+        "WAIT_PV": {
+          "step": 3021,
+          "time_hours": 0.08391666666666667,
+          "time_seconds": 302.1,
+          "time_minutes": 5.035
+        }
+      },
+      "completion_count": 2444
+    },
+    {
+      "name": "Explore-Outer",
+      "type": "explore",
+      "final_soc": 0.2,
+      "final_mode": "WAIT_PV",
+      "first_modes": {
+        "GO_STATION": {
+          "step": 0,
+          "time_hours": 0.0,
+          "time_seconds": 0.0,
+          "time_minutes": 0.0
+        },
+        "WAIT_PV": {
+          "step": 1700,
+          "time_hours": 0.04722222222222223,
+          "time_seconds": 170.00000000000003,
+          "time_minutes": 2.8333333333333335
+        }
+      },
+      "completion_count": 1
+    },
+    {
+      "name": "Drone-3m",
+      "type": "transport",
+      "final_soc": 0.26576849296434535,
+      "final_mode": "DONE",
+      "first_modes": {},
+      "delivery_count": 10
+    },
+    {
+      "name": "Drone-6m",
+      "type": "transport",
+      "final_soc": 0.40492405256735403,
+      "final_mode": "CHARGE",
+      "first_modes": {
+        "GO_STATION": {
+          "step": 5764,
+          "time_hours": 0.16011111111111112,
+          "time_seconds": 576.4000000000001,
+          "time_minutes": 9.606666666666667
+        },
+        "CHARGE": {
+          "step": 6295,
+          "time_hours": 0.1748611111111111,
+          "time_seconds": 629.5,
+          "time_minutes": 10.491666666666667
+        }
+      },
+      "delivery_count": 6
+    },
+    {
+      "name": "Drone-9m",
+      "type": "transport",
+      "final_soc": 0.5835330171721655,
+      "final_mode": "WORK",
+      "first_modes": {
+        "GO_STATION": {
+          "step": 1054,
+          "time_hours": 0.029277777777777778,
+          "time_seconds": 105.4,
+          "time_minutes": 1.7566666666666666
+        },
+        "CHARGE": {
+          "step": 1110,
+          "time_hours": 0.030833333333333334,
+          "time_seconds": 111.0,
+          "time_minutes": 1.85
+        }
+      },
+      "delivery_count": 1
+    }
+  ],
+  "stations": [
+    {
+      "id": 0,
+      "renewable_label": "PV actual",
+      "renewable_source_name": "Inverter_1",
+      "renewable_start_time": "2023-06-01 11:00:00",
+      "max_queue": 1,
+      "max_queue_step": 6296,
+      "max_queue_time_minutes": 10.493333333333334,
+      "min_soc": 0.8,
+      "min_soc_step": 0,
+      "min_soc_time_minutes": 0.0
+    },
+    {
+      "id": 1,
+      "renewable_label": "Wind actual",
+      "renewable_source_name": "Turbine_2",
+      "renewable_start_time": "2020-06-01 11:00:00",
+      "max_queue": 0,
+      "max_queue_step": 0,
+      "max_queue_time_minutes": 0.0,
+      "min_soc": 0.55,
+      "min_soc_step": 0,
+      "min_soc_time_minutes": 0.0
+    },
+    {
+      "id": 2,
+      "renewable_label": "PV actual",
+      "renewable_source_name": "Inverter_3",
+      "renewable_start_time": "2023-06-01 11:00:00",
+      "max_queue": 1,
+      "max_queue_step": 1111,
+      "max_queue_time_minutes": 1.8516666666666668,
+      "min_soc": 0.27179810106041746,
+      "min_soc_step": 10172,
+      "min_soc_time_minutes": 16.953333333333333
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "rovers": [
+    {
+      "name": "Explore-Inner",
+      "type": "explore",
+      "final_soc": 0.5625397697368407,
+      "final_mode": "WORK",
+      "first_modes": {},
+      "completion_count": 10122
+    },
+    {
+      "name": "Explore-Mid",
+      "type": "explore",
+      "final_soc": 0.5500433851674618,
+      "final_mode": "WORK",
+      "first_modes": {},
+      "completion_count": 10022
+    },
+    {
+      "name": "Explore-Outer",
+      "type": "explore",
+      "final_soc": 0.5470448958047218,
+      "final_mode": "GO_STATION",
+      "first_modes": {
+        "GO_STATION": {
+          "step": 10282,
+          "time_hours": 0.28561111111111115,
+          "time_seconds": 1028.2,
+          "time_minutes": 17.13666666666667
+        }
+      },
+      "completion_count": 9777
+    },
+    {
+      "name": "Drone-3m",
+      "type": "transport",
+      "final_soc": 0.33348252933166583,
+      "final_mode": "DONE",
+      "first_modes": {},
+      "delivery_count": 10
+    },
+    {
+      "name": "Drone-6m",
+      "type": "transport",
+      "final_soc": 0.33245704714256186,
+      "final_mode": "DONE",
+      "first_modes": {},
+      "delivery_count": 10
+    },
+    {
+      "name": "Drone-9m",
+      "type": "transport",
+      "final_soc": 0.33091326091161893,
+      "final_mode": "DONE",
+      "first_modes": {},
+      "delivery_count": 10
+    }
+  ],
+  "stations": [
+    {
+      "id": 0,
+      "renewable_label": "PV forecast",
+      "renewable_source_name": "Inverter_1",
+      "renewable_start_time": "2023-06-01 14:00:00",
+      "max_queue": 0,
+      "max_queue_step": 0,
+      "max_queue_time_minutes": 0.0,
+      "min_soc": 0.8,
+      "min_soc_step": 0,
+      "min_soc_time_minutes": 0.0
+    },
+    {
+      "id": 1,
+      "renewable_label": "Wind forecast",
+      "renewable_source_name": "Turbine_2",
+      "renewable_start_time": "2020-06-01 14:00:00",
+      "max_queue": 0,
+      "max_queue_step": 0,
+      "max_queue_time_minutes": 0.0,
+      "min_soc": 0.8,
+      "min_soc_step": 0,
+      "min_soc_time_minutes": 0.0
+    },
+    {
+      "id": 2,
+      "renewable_label": "PV forecast",
+      "renewable_source_name": "Inverter_3",
+      "renewable_start_time": "2023-06-01 14:00:00",
+      "max_queue": 0,
+      "max_queue_step": 0,
+      "max_queue_time_minutes": 0.0,
+      "min_soc": 0.8,
+      "min_soc_step": 0,
+      "min_soc_time_minutes": 0.0
+    }
+  ]
+}

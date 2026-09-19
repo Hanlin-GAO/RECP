@@ -1,0 +1,311 @@
+{
+  "environment": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "torch": "2.14.0+cpu",
+    "matplotlib": "3.11.2",
+    "scipy": "1.18.1",
+    "openpyxl": "3.1.5",
+    "python": "3.12.14"
+  },
+  "checks": {
+    "python_syntax_files": 39,
+    "vehicle_power_schemas": "passed",
+    "short_schedule": {
+      "steps": 300,
+      "vehicles": 6,
+      "finite_states": true,
+      "supply": "constant 0.1 kW test input; not a paper result"
+    }
+  },
+  "models": [
+    {
+      "domain": "pv",
+      "station": "Inverter_1",
+      "model": "dnn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.006218750000698492,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_1",
+      "model": "lstm",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.9801406250007858,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_1",
+      "model": "gru",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 1.443468749999738,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_1",
+      "model": "tcn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 4.553124999998545,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_1",
+      "model": "trans",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.007382812500509317,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_1",
+      "model": "pinn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.8865703124993161,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_2",
+      "model": "dnn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.006203124999956344,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_2",
+      "model": "lstm",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 1.3339374999995925,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_2",
+      "model": "gru",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.7979687499991996,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_2",
+      "model": "tcn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 2.541937500000131,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_2",
+      "model": "trans",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.006289062499490683,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_2",
+      "model": "pinn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.7856406249993597,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_3",
+      "model": "dnn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.005164062500625732,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_3",
+      "model": "lstm",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.36954687499928696,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_3",
+      "model": "gru",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.8181249999997817,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_3",
+      "model": "tcn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 2.259859375000815,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_3",
+      "model": "trans",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.005394531250203727,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "pv",
+      "station": "Inverter_3",
+      "model": "pinn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 1.539171874999738,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_1",
+      "model": "dnn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 2.5661926268405466e-06,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_1",
+      "model": "lstm",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.0009084174560545222,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_1",
+      "model": "gru",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.001203623626708783,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_1",
+      "model": "tcn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.0007014105895999379,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_1",
+      "model": "trans",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 3.841735839671401e-06,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_1",
+      "model": "pinn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.0002806200378420165,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_2",
+      "model": "dnn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 6.532348633569995e-06,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_2",
+      "model": "lstm",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.001834846862793782,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_2",
+      "model": "gru",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.002234650878907729,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_2",
+      "model": "tcn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.005924291625976963,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_2",
+      "model": "trans",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 1.1080566405752279e-05,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_2",
+      "model": "pinn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.0015453330078116778,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_3",
+      "model": "dnn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 1.076116943377059e-05,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_3",
+      "model": "lstm",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.0005639735412596991,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_3",
+      "model": "gru",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.000980103137206978,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_3",
+      "model": "tcn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.0051292203369133205,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_3",
+      "model": "trans",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 8.699493408315107e-06,
+      "forward_backward": "passed"
+    },
+    {
+      "domain": "wind",
+      "station": "Turbine_3",
+      "model": "pinn",
+      "samples": 32,
+      "max_abs_difference_from_saved_predictions": 0.00042028665161097933,
+      "forward_backward": "passed"
+    }
+  ]
+}

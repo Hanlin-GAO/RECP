@@ -1,0 +1,23 @@
+[
+  {
+    "archived_display_id": "Turbine_1",
+    "raw_file": "Wind 6.xlsx",
+    "verification": "all timestamps and weather/power rows compared after original preprocessing",
+    "rows": 34750,
+    "max_absolute_difference": 0.0
+  },
+  {
+    "archived_display_id": "Turbine_2",
+    "raw_file": "Wind 4.xlsx",
+    "verification": "all timestamps and weather/power rows compared after original preprocessing",
+    "rows": 35136,
+    "max_absolute_difference": 0.0
+  },
+  {
+    "archived_display_id": "Turbine_3",
+    "raw_file": "Wind 3.xlsx",
+    "verification": "all timestamps and weather/power rows compared after original preprocessing",
+    "rows": 35136,
+    "max_absolute_difference": 0.0
+  }
+]

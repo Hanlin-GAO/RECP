@@ -1,0 +1,62 @@
+{
+  "flight_profiles": [
+    {
+      "file": "May-9th-2026-06-19PM-Flight-Airdata-3m-idealized.csv",
+      "rows": 530,
+      "max_abs_difference_by_field": {
+        "aligned_time_s": 0.0,
+        "estimated_power(W)": 0.0,
+        "height_above_takeoff(m)": 0.0,
+        "battery_percent": 0.0
+      }
+    },
+    {
+      "file": "May-9th-2026-06-20PM-Flight-Airdata-6m-idealized.csv",
+      "rows": 480,
+      "max_abs_difference_by_field": {
+        "aligned_time_s": 0.0,
+        "estimated_power(W)": 0.0,
+        "height_above_takeoff(m)": 0.0,
+        "battery_percent": 0.0
+      }
+    },
+    {
+      "file": "May-9th-2026-06-21PM-Flight-Airdata-9m-idealized.csv",
+      "rows": 501,
+      "max_abs_difference_by_field": {
+        "aligned_time_s": 0.0,
+        "estimated_power(W)": 0.0,
+        "height_above_takeoff(m)": 0.0,
+        "battery_percent": 0.0
+      }
+    }
+  ],
+  "full_pair": {
+    "group": "G1",
+    "steps_per_case": 10600,
+    "branches": 2,
+    "max_abs_difference_by_metric": {
+      "rover_mae": 2.7755575615628914e-17,
+      "rover_rmse": 6.938893903907228e-18,
+      "drone_mae": 7.112366251504909e-17,
+      "drone_rmse": 0.0,
+      "station_mae": 1.628922528655076e-09,
+      "station_rmse": 2.569442876781264e-09,
+      "cr_r": 0.0,
+      "cr_d": 0.0,
+      "epsilon_e": 0.0,
+      "actual_explore_completed": 0.0,
+      "pred_explore_completed": 0.0,
+      "actual_transport_completed": 0.0,
+      "pred_transport_completed": 0.0,
+      "actual_station_energy_kwh": 0.0,
+      "pred_station_energy_kwh": 0.0
+    },
+    "max_abs_difference": 2.569442876781264e-09,
+    "archived_reference": "results_reference/scheduling/manual_first_frame/G1_AM_H/comparison_summary.json"
+  },
+  "full_wind_inference": {
+    "source": "Turbine_2",
+    "rows": 35112
+  }
+}

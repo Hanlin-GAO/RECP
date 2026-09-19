@@ -1,0 +1,5 @@
+﻿key,value
+origin_lower_left_zero,False
+x_offset_added,0.0
+y_offset_added,0.0
+note,x_export = x_raw + x_offset_added; y_export = y_raw + y_offset_added

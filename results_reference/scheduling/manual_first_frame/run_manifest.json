@@ -1,0 +1,202 @@
+{
+  "output_dir": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame",
+  "vehicle_output_mode": "actual",
+  "dt_hours": 2.777777777777778e-05,
+  "n_steps": 10600,
+  "horizon_minutes": 17.666666666666668,
+  "groups": [
+    {
+      "group": "G1",
+      "period": "AM",
+      "init": "H",
+      "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G1_AM_H",
+      "cases": [
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G1_AM_H/actual_generation",
+          "renewable_kind": "actual"
+        },
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G1_AM_H/predicted_generation",
+          "renewable_kind": "predicted"
+        }
+      ]
+    },
+    {
+      "group": "G2",
+      "period": "AM",
+      "init": "M",
+      "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G2_AM_M",
+      "cases": [
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G2_AM_M/actual_generation",
+          "renewable_kind": "actual"
+        },
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G2_AM_M/predicted_generation",
+          "renewable_kind": "predicted"
+        }
+      ]
+    },
+    {
+      "group": "G3",
+      "period": "AM",
+      "init": "L",
+      "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G3_AM_L",
+      "cases": [
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G3_AM_L/actual_generation",
+          "renewable_kind": "actual"
+        },
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G3_AM_L/predicted_generation",
+          "renewable_kind": "predicted"
+        }
+      ]
+    },
+    {
+      "group": "G4",
+      "period": "AM",
+      "init": "X",
+      "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G4_AM_X",
+      "cases": [
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G4_AM_X/actual_generation",
+          "renewable_kind": "actual"
+        },
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G4_AM_X/predicted_generation",
+          "renewable_kind": "predicted"
+        }
+      ]
+    },
+    {
+      "group": "G5",
+      "period": "NN",
+      "init": "H",
+      "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G5_NN_H",
+      "cases": [
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G5_NN_H/actual_generation",
+          "renewable_kind": "actual"
+        },
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G5_NN_H/predicted_generation",
+          "renewable_kind": "predicted"
+        }
+      ]
+    },
+    {
+      "group": "G6",
+      "period": "NN",
+      "init": "M",
+      "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G6_NN_M",
+      "cases": [
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G6_NN_M/actual_generation",
+          "renewable_kind": "actual"
+        },
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G6_NN_M/predicted_generation",
+          "renewable_kind": "predicted"
+        }
+      ]
+    },
+    {
+      "group": "G7",
+      "period": "NN",
+      "init": "L",
+      "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G7_NN_L",
+      "cases": [
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G7_NN_L/actual_generation",
+          "renewable_kind": "actual"
+        },
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G7_NN_L/predicted_generation",
+          "renewable_kind": "predicted"
+        }
+      ]
+    },
+    {
+      "group": "G8",
+      "period": "NN",
+      "init": "X",
+      "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G8_NN_X",
+      "cases": [
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G8_NN_X/actual_generation",
+          "renewable_kind": "actual"
+        },
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G8_NN_X/predicted_generation",
+          "renewable_kind": "predicted"
+        }
+      ]
+    },
+    {
+      "group": "G9",
+      "period": "PM",
+      "init": "H",
+      "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G9_PM_H",
+      "cases": [
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G9_PM_H/actual_generation",
+          "renewable_kind": "actual"
+        },
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G9_PM_H/predicted_generation",
+          "renewable_kind": "predicted"
+        }
+      ]
+    },
+    {
+      "group": "G10",
+      "period": "PM",
+      "init": "M",
+      "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G10_PM_M",
+      "cases": [
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G10_PM_M/actual_generation",
+          "renewable_kind": "actual"
+        },
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G10_PM_M/predicted_generation",
+          "renewable_kind": "predicted"
+        }
+      ]
+    },
+    {
+      "group": "G11",
+      "period": "PM",
+      "init": "L",
+      "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G11_PM_L",
+      "cases": [
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G11_PM_L/actual_generation",
+          "renewable_kind": "actual"
+        },
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G11_PM_L/predicted_generation",
+          "renewable_kind": "predicted"
+        }
+      ]
+    },
+    {
+      "group": "G12",
+      "period": "PM",
+      "init": "X",
+      "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G12_PM_X",
+      "cases": [
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G12_PM_X/actual_generation",
+          "renewable_kind": "actual"
+        },
+        {
+          "folder": "/home/amdt/GHL_code/VSgo/mix/validation_matrix_manual_first_frame/G12_PM_X/predicted_generation",
+          "renewable_kind": "predicted"
+        }
+      ]
+    }
+  ],
+  "note": "Paired predicted-vs-actual batch. Stations use forecast vs measured renewable generation; rover/drone WORK load uses the indoor-proxy 'normal' vs measured period+SoC-level output power from VSgo/experiment. Rover/drone MAE/RMSE capture the measured-vs-proxy SoC gap."
+}

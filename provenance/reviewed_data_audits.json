@@ -1,0 +1,1190 @@
+{
+  "scope": "All raw sources under the fixed-year reviewed protocol",
+  "sources": [
+    {
+      "audit": {
+        "source_id": "Inverter_1",
+        "domain": "pv",
+        "fixed_year": 2023,
+        "cadence": "5min",
+        "inputs": [
+          {
+            "path": "data/forecasting/raw/pv/Library_Inverter_1.csv",
+            "sha256": "74047bbfb42195195a70991b615cbaa26cf1877b6e9e930492f6087fe2b27739"
+          },
+          {
+            "path": "data/forecasting/raw/pv/Irradiance_2023.csv",
+            "sha256": "c114d4d498a8caee868d9262210386f01d5eb65bee485dbb42aaf639326c5944"
+          },
+          {
+            "path": "data/forecasting/raw/pv/Temperature_2023.csv",
+            "sha256": "1f12b5c04071b84d2db60060dbef99e853d785e6bef2ff959837c03cb9352b5d"
+          },
+          {
+            "path": "data/forecasting/raw/pv/Wind_2023.csv",
+            "sha256": "6058f67f7724b3d1ee76126772397ed7fffbe66e91c726b1e7a7c49d930abdfa"
+          }
+        ],
+        "input_rows": 83376,
+        "invalid_time_rows": 0,
+        "outside_fixed_year_rows": 30816,
+        "duplicate_power_rows": 0,
+        "Irradiance_2023.csv": {
+          "input_rows": 519670,
+          "invalid_time_rows": 0,
+          "outside_fixed_year_rows": 0,
+          "duplicate_time_rows": 0
+        },
+        "Temperature_2023.csv": {
+          "input_rows": 519670,
+          "invalid_time_rows": 0,
+          "outside_fixed_year_rows": 0,
+          "duplicate_time_rows": 0
+        },
+        "Wind_2023.csv": {
+          "input_rows": 519670,
+          "invalid_time_rows": 0,
+          "outside_fixed_year_rows": 0,
+          "duplicate_time_rows": 0
+        },
+        "off_grid_rows": 0,
+        "negative_target_rows": 0,
+        "invalid_Irradiance_rows": 0,
+        "invalid_Temperature_rows": 0,
+        "invalid_WindSpeed_rows": 0,
+        "grid_rows": 105120,
+        "missing_target_rows": 57018,
+        "missing_input_rows_by_feature": {
+          "Irradiance": 53168,
+          "Temperature": 53168,
+          "WindSpeed": 53168,
+          "hour_sin": 0,
+          "hour_cos": 0,
+          "year_sin": 0,
+          "year_cos": 0
+        },
+        "daytime_filter": false,
+        "outlier_filter": "No performance-based filtering; only invalid time/nonfinite and negative generation are excluded."
+      },
+      "training_statistics": {
+        "feature_names": [
+          "Irradiance",
+          "Temperature",
+          "WindSpeed",
+          "hour_sin",
+          "hour_cos",
+          "year_sin",
+          "year_cos"
+        ],
+        "sensor_names": [
+          "Irradiance",
+          "Temperature",
+          "WindSpeed"
+        ],
+        "median": [
+          268.60900000000004,
+          24.6032,
+          2.1474200000000003,
+          6.123233995736766e-17,
+          -6.123233995736765e-17,
+          0.5012418134457758,
+          -0.5049610547215202
+        ],
+        "mean": [
+          339.017800581933,
+          24.496090043533762,
+          2.2752464501790883,
+          1.5026338147647294e-17,
+          -2.609303313476591e-17,
+          0.3579909331481599,
+          -0.20943419780894174
+        ],
+        "std": [
+          278.1251678678701,
+          4.256810187510411,
+          1.1748534606420047,
+          0.7071067811865476,
+          0.7071067811865476,
+          0.5668183872826295,
+          0.7118263302310149
+        ],
+        "y_mean": 14694.792241580917,
+        "y_std": 13584.70639167752,
+        "training_power_bound": 52986.15,
+        "training_weather_quantiles": {
+          "Irradiance": [
+            40.09958,
+            1046.4553999999998
+          ],
+          "Temperature": [
+            16.603260000000002,
+            32.275380000000006
+          ]
+        },
+        "cutoffs": [
+          "2023-09-01 00:00:00",
+          "2023-11-01 00:00:00"
+        ],
+        "counts": {
+          "train": {
+            "interval_rows": 69984,
+            "usable_targets": 34208,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 35752
+          },
+          "val": {
+            "interval_rows": 17568,
+            "usable_targets": 8626,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 8918
+          },
+          "test": {
+            "interval_rows": 17568,
+            "usable_targets": 5268,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 12276
+          }
+        },
+        "physics_weather": "last input row after the same masking/imputation as the temporal branch"
+      }
+    },
+    {
+      "audit": {
+        "source_id": "Inverter_2",
+        "domain": "pv",
+        "fixed_year": 2023,
+        "cadence": "5min",
+        "inputs": [
+          {
+            "path": "data/forecasting/raw/pv/Library_Inverter_2.csv",
+            "sha256": "9494d4302bb73431a0f1d3ec6ca3e539c208831a2fa97c0348c2192000ddc35a"
+          },
+          {
+            "path": "data/forecasting/raw/pv/Irradiance_2023.csv",
+            "sha256": "c114d4d498a8caee868d9262210386f01d5eb65bee485dbb42aaf639326c5944"
+          },
+          {
+            "path": "data/forecasting/raw/pv/Temperature_2023.csv",
+            "sha256": "1f12b5c04071b84d2db60060dbef99e853d785e6bef2ff959837c03cb9352b5d"
+          },
+          {
+            "path": "data/forecasting/raw/pv/Wind_2023.csv",
+            "sha256": "6058f67f7724b3d1ee76126772397ed7fffbe66e91c726b1e7a7c49d930abdfa"
+          }
+        ],
+        "input_rows": 83376,
+        "invalid_time_rows": 0,
+        "outside_fixed_year_rows": 30816,
+        "duplicate_power_rows": 0,
+        "Irradiance_2023.csv": {
+          "input_rows": 519670,
+          "invalid_time_rows": 0,
+          "outside_fixed_year_rows": 0,
+          "duplicate_time_rows": 0
+        },
+        "Temperature_2023.csv": {
+          "input_rows": 519670,
+          "invalid_time_rows": 0,
+          "outside_fixed_year_rows": 0,
+          "duplicate_time_rows": 0
+        },
+        "Wind_2023.csv": {
+          "input_rows": 519670,
+          "invalid_time_rows": 0,
+          "outside_fixed_year_rows": 0,
+          "duplicate_time_rows": 0
+        },
+        "off_grid_rows": 0,
+        "negative_target_rows": 0,
+        "invalid_Irradiance_rows": 0,
+        "invalid_Temperature_rows": 0,
+        "invalid_WindSpeed_rows": 0,
+        "grid_rows": 105120,
+        "missing_target_rows": 57055,
+        "missing_input_rows_by_feature": {
+          "Irradiance": 53168,
+          "Temperature": 53168,
+          "WindSpeed": 53168,
+          "hour_sin": 0,
+          "hour_cos": 0,
+          "year_sin": 0,
+          "year_cos": 0
+        },
+        "daytime_filter": false,
+        "outlier_filter": "No performance-based filtering; only invalid time/nonfinite and negative generation are excluded."
+      },
+      "training_statistics": {
+        "feature_names": [
+          "Irradiance",
+          "Temperature",
+          "WindSpeed",
+          "hour_sin",
+          "hour_cos",
+          "year_sin",
+          "year_cos"
+        ],
+        "sensor_names": [
+          "Irradiance",
+          "Temperature",
+          "WindSpeed"
+        ],
+        "median": [
+          268.60900000000004,
+          24.6032,
+          2.1474200000000003,
+          6.123233995736766e-17,
+          -6.123233995736765e-17,
+          0.5012418134457758,
+          -0.5049610547215202
+        ],
+        "mean": [
+          339.017800581933,
+          24.496090043533762,
+          2.2752464501790883,
+          1.5026338147647294e-17,
+          -2.609303313476591e-17,
+          0.3579909331481599,
+          -0.20943419780894174
+        ],
+        "std": [
+          278.1251678678701,
+          4.256810187510411,
+          1.1748534606420047,
+          0.7071067811865476,
+          0.7071067811865476,
+          0.5668183872826295,
+          0.7118263302310149
+        ],
+        "y_mean": 14411.276119184771,
+        "y_std": 13638.96510105929,
+        "training_power_bound": 52682.700000000004,
+        "training_weather_quantiles": {
+          "Irradiance": [
+            40.09958,
+            1046.4553999999998
+          ],
+          "Temperature": [
+            16.603260000000002,
+            32.275380000000006
+          ]
+        },
+        "cutoffs": [
+          "2023-09-01 00:00:00",
+          "2023-11-01 00:00:00"
+        ],
+        "counts": {
+          "train": {
+            "interval_rows": 69984,
+            "usable_targets": 34199,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 35761
+          },
+          "val": {
+            "interval_rows": 17568,
+            "usable_targets": 8610,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 8934
+          },
+          "test": {
+            "interval_rows": 17568,
+            "usable_targets": 5256,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 12288
+          }
+        },
+        "physics_weather": "last input row after the same masking/imputation as the temporal branch"
+      }
+    },
+    {
+      "audit": {
+        "source_id": "Inverter_3",
+        "domain": "pv",
+        "fixed_year": 2023,
+        "cadence": "5min",
+        "inputs": [
+          {
+            "path": "data/forecasting/raw/pv/Library_Inverter_3.csv",
+            "sha256": "b6fe37c8b6f1d6c3cfe37d2dcf3c36a3dca7169c170727ff2f502ae202b8ee81"
+          },
+          {
+            "path": "data/forecasting/raw/pv/Irradiance_2023.csv",
+            "sha256": "c114d4d498a8caee868d9262210386f01d5eb65bee485dbb42aaf639326c5944"
+          },
+          {
+            "path": "data/forecasting/raw/pv/Temperature_2023.csv",
+            "sha256": "1f12b5c04071b84d2db60060dbef99e853d785e6bef2ff959837c03cb9352b5d"
+          },
+          {
+            "path": "data/forecasting/raw/pv/Wind_2023.csv",
+            "sha256": "6058f67f7724b3d1ee76126772397ed7fffbe66e91c726b1e7a7c49d930abdfa"
+          }
+        ],
+        "input_rows": 83376,
+        "invalid_time_rows": 0,
+        "outside_fixed_year_rows": 30816,
+        "duplicate_power_rows": 0,
+        "Irradiance_2023.csv": {
+          "input_rows": 519670,
+          "invalid_time_rows": 0,
+          "outside_fixed_year_rows": 0,
+          "duplicate_time_rows": 0
+        },
+        "Temperature_2023.csv": {
+          "input_rows": 519670,
+          "invalid_time_rows": 0,
+          "outside_fixed_year_rows": 0,
+          "duplicate_time_rows": 0
+        },
+        "Wind_2023.csv": {
+          "input_rows": 519670,
+          "invalid_time_rows": 0,
+          "outside_fixed_year_rows": 0,
+          "duplicate_time_rows": 0
+        },
+        "off_grid_rows": 0,
+        "negative_target_rows": 0,
+        "invalid_Irradiance_rows": 0,
+        "invalid_Temperature_rows": 0,
+        "invalid_WindSpeed_rows": 0,
+        "grid_rows": 105120,
+        "missing_target_rows": 57085,
+        "missing_input_rows_by_feature": {
+          "Irradiance": 53168,
+          "Temperature": 53168,
+          "WindSpeed": 53168,
+          "hour_sin": 0,
+          "hour_cos": 0,
+          "year_sin": 0,
+          "year_cos": 0
+        },
+        "daytime_filter": false,
+        "outlier_filter": "No performance-based filtering; only invalid time/nonfinite and negative generation are excluded."
+      },
+      "training_statistics": {
+        "feature_names": [
+          "Irradiance",
+          "Temperature",
+          "WindSpeed",
+          "hour_sin",
+          "hour_cos",
+          "year_sin",
+          "year_cos"
+        ],
+        "sensor_names": [
+          "Irradiance",
+          "Temperature",
+          "WindSpeed"
+        ],
+        "median": [
+          268.60900000000004,
+          24.6032,
+          2.1474200000000003,
+          6.123233995736766e-17,
+          -6.123233995736765e-17,
+          0.5012418134457758,
+          -0.5049610547215202
+        ],
+        "mean": [
+          339.017800581933,
+          24.496090043533762,
+          2.2752464501790883,
+          1.5026338147647294e-17,
+          -2.609303313476591e-17,
+          0.3579909331481599,
+          -0.20943419780894174
+        ],
+        "std": [
+          278.1251678678701,
+          4.256810187510411,
+          1.1748534606420047,
+          0.7071067811865476,
+          0.7071067811865476,
+          0.5668183872826295,
+          0.7118263302310149
+        ],
+        "y_mean": 11407.335858216595,
+        "y_std": 11316.5730214166,
+        "training_power_bound": 52674.3,
+        "training_weather_quantiles": {
+          "Irradiance": [
+            40.09958,
+            1046.4553999999998
+          ],
+          "Temperature": [
+            16.603260000000002,
+            32.275380000000006
+          ]
+        },
+        "cutoffs": [
+          "2023-09-01 00:00:00",
+          "2023-11-01 00:00:00"
+        ],
+        "counts": {
+          "train": {
+            "interval_rows": 69984,
+            "usable_targets": 34193,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 35767
+          },
+          "val": {
+            "interval_rows": 17568,
+            "usable_targets": 8598,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 8946
+          },
+          "test": {
+            "interval_rows": 17568,
+            "usable_targets": 5244,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 12300
+          }
+        },
+        "physics_weather": "last input row after the same masking/imputation as the temporal branch"
+      }
+    },
+    {
+      "audit": {
+        "source_id": "Turbine_1",
+        "domain": "wind",
+        "fixed_year": 2020,
+        "cadence": "15min",
+        "inputs": [
+          {
+            "path": "data/forecasting/raw/wind/Wind 1.xlsx",
+            "sha256": "5fa8104662cca4a909fae9e0873d7c8addb8c2061a92711a64afa3b16beecf68"
+          }
+        ],
+        "input_rows": 70176,
+        "invalid_time_rows": 23,
+        "outside_fixed_year_rows": 35037,
+        "duplicate_time_rows": 3,
+        "off_grid_rows": 24,
+        "negative_target_rows": 3558,
+        "invalid_WindSpeed_rows": 0,
+        "invalid_Temperature_rows": 0,
+        "invalid_WindDir_sin_rows": 0,
+        "invalid_WindDir_cos_rows": 0,
+        "grid_rows": 35136,
+        "missing_target_rows": 3605,
+        "missing_input_rows_by_feature": {
+          "WindSpeed": 47,
+          "Temperature": 47,
+          "WindDir_sin": 47,
+          "WindDir_cos": 47,
+          "hour_sin": 0,
+          "hour_cos": 0,
+          "year_sin": 0,
+          "year_cos": 0
+        },
+        "daytime_filter": false,
+        "outlier_filter": "No performance-based filtering; only invalid time/nonfinite and negative generation are excluded."
+      },
+      "training_statistics": {
+        "feature_names": [
+          "WindSpeed",
+          "Temperature",
+          "WindDir_sin",
+          "WindDir_cos",
+          "hour_sin",
+          "hour_cos",
+          "year_sin",
+          "year_cos"
+        ],
+        "sensor_names": [
+          "WindSpeed",
+          "Temperature",
+          "WindDir_sin",
+          "WindDir_cos"
+        ],
+        "median": [
+          7.44,
+          22.005000000000003,
+          0.4395472878663045,
+          0.6490498116908973,
+          6.123233995736766e-17,
+          -6.123233995736765e-17,
+          0.4999815806238549,
+          -0.5000000000000001
+        ],
+        "mean": [
+          7.263054986338798,
+          21.61257342896175,
+          0.10727643256011957,
+          0.22464290234554282,
+          3.640075490574284e-18,
+          -5.2477754989112593e-17,
+          0.35631518503441234,
+          -0.20981702865170693
+        ],
+        "std": [
+          3.208847538710684,
+          6.905871117100407,
+          0.659336503156201,
+          0.7094383053153374,
+          0.7071067811865476,
+          0.7071067811865476,
+          0.5682379500808562,
+          0.7114224732812197
+        ],
+        "y_mean": 23.379049696675565,
+        "y_std": 20.616880785921364,
+        "training_power_bound": 94.67640000000002,
+        "training_weather_quantiles": {
+          "WindSpeed": [
+            2.8230000000000017,
+            11.39
+          ],
+          "Temperature": [
+            12.81,
+            30.02
+          ]
+        },
+        "cutoffs": [
+          "2020-09-01 00:00:00",
+          "2020-11-01 00:00:00"
+        ],
+        "counts": {
+          "train": {
+            "interval_rows": 23424,
+            "usable_targets": 20581,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 2819
+          },
+          "val": {
+            "interval_rows": 5856,
+            "usable_targets": 5223,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 609
+          },
+          "test": {
+            "interval_rows": 5856,
+            "usable_targets": 5666,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 166
+          }
+        },
+        "physics_weather": "last input row after the same masking/imputation as the temporal branch"
+      }
+    },
+    {
+      "audit": {
+        "source_id": "Turbine_2",
+        "domain": "wind",
+        "fixed_year": 2020,
+        "cadence": "15min",
+        "inputs": [
+          {
+            "path": "data/forecasting/raw/wind/Wind 2.xlsx",
+            "sha256": "6b618fb2f92c77bae4d7fcb06aba2d59d297ffc3cd2afe683d96b50b2d5e2489"
+          }
+        ],
+        "input_rows": 70176,
+        "invalid_time_rows": 0,
+        "outside_fixed_year_rows": 35040,
+        "duplicate_time_rows": 0,
+        "off_grid_rows": 0,
+        "negative_target_rows": 0,
+        "invalid_WindSpeed_rows": 0,
+        "invalid_Temperature_rows": 0,
+        "invalid_WindDir_sin_rows": 0,
+        "invalid_WindDir_cos_rows": 0,
+        "grid_rows": 35136,
+        "missing_target_rows": 0,
+        "missing_input_rows_by_feature": {
+          "WindSpeed": 0,
+          "Temperature": 0,
+          "WindDir_sin": 0,
+          "WindDir_cos": 0,
+          "hour_sin": 0,
+          "hour_cos": 0,
+          "year_sin": 0,
+          "year_cos": 0
+        },
+        "daytime_filter": false,
+        "outlier_filter": "No performance-based filtering; only invalid time/nonfinite and negative generation are excluded."
+      },
+      "training_statistics": {
+        "feature_names": [
+          "WindSpeed",
+          "Temperature",
+          "WindDir_sin",
+          "WindDir_cos",
+          "hour_sin",
+          "hour_cos",
+          "year_sin",
+          "year_cos"
+        ],
+        "sensor_names": [
+          "WindSpeed",
+          "Temperature",
+          "WindDir_sin",
+          "WindDir_cos"
+        ],
+        "median": [
+          7.868,
+          15.092500000000001,
+          -0.8646783715566699,
+          0.15253737664050557,
+          6.123233995736766e-17,
+          -6.123233995736765e-17,
+          0.4999815806238549,
+          -0.5000000000000001
+        ],
+        "mean": [
+          7.816238644125683,
+          11.173305754781422,
+          -0.3279864338519915,
+          0.13246442103853887,
+          3.640075490574284e-18,
+          -5.2477754989112593e-17,
+          0.35631518503441234,
+          -0.20981702865170693
+        ],
+        "std": [
+          4.638080145321482,
+          12.839370749771707,
+          0.8433046032406734,
+          0.4046176250746727,
+          0.7071067811865476,
+          0.7071067811865476,
+          0.5682379500808562,
+          0.7114224732812197
+        ],
+        "y_mean": 78.20063446687159,
+        "y_std": 53.907453416857955,
+        "training_power_bound": 208.57326,
+        "training_weather_quantiles": {
+          "WindSpeed": [
+            1.388,
+            13.698
+          ],
+          "Temperature": [
+            -8.0444,
+            25.806
+          ]
+        },
+        "cutoffs": [
+          "2020-09-01 00:00:00",
+          "2020-11-01 00:00:00"
+        ],
+        "counts": {
+          "train": {
+            "interval_rows": 23424,
+            "usable_targets": 23400,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 0
+          },
+          "val": {
+            "interval_rows": 5856,
+            "usable_targets": 5832,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 0
+          },
+          "test": {
+            "interval_rows": 5856,
+            "usable_targets": 5832,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 0
+          }
+        },
+        "physics_weather": "last input row after the same masking/imputation as the temporal branch"
+      }
+    },
+    {
+      "audit": {
+        "source_id": "Turbine_3",
+        "domain": "wind",
+        "fixed_year": 2020,
+        "cadence": "15min",
+        "inputs": [
+          {
+            "path": "data/forecasting/raw/wind/Wind 3.xlsx",
+            "sha256": "b96f967e8774a66c96b8ebc7306c841c6ade55374d0488305dff12f41a659593"
+          }
+        ],
+        "input_rows": 70176,
+        "invalid_time_rows": 0,
+        "outside_fixed_year_rows": 35040,
+        "duplicate_time_rows": 0,
+        "off_grid_rows": 0,
+        "negative_target_rows": 0,
+        "invalid_WindSpeed_rows": 0,
+        "invalid_Temperature_rows": 0,
+        "invalid_WindDir_sin_rows": 0,
+        "invalid_WindDir_cos_rows": 0,
+        "grid_rows": 35136,
+        "missing_target_rows": 0,
+        "missing_input_rows_by_feature": {
+          "WindSpeed": 0,
+          "Temperature": 0,
+          "WindDir_sin": 0,
+          "WindDir_cos": 0,
+          "hour_sin": 0,
+          "hour_cos": 0,
+          "year_sin": 0,
+          "year_cos": 0
+        },
+        "daytime_filter": false,
+        "outlier_filter": "No performance-based filtering; only invalid time/nonfinite and negative generation are excluded."
+      },
+      "training_statistics": {
+        "feature_names": [
+          "WindSpeed",
+          "Temperature",
+          "WindDir_sin",
+          "WindDir_cos",
+          "hour_sin",
+          "hour_cos",
+          "year_sin",
+          "year_cos"
+        ],
+        "sensor_names": [
+          "WindSpeed",
+          "Temperature",
+          "WindDir_sin",
+          "WindDir_cos"
+        ],
+        "median": [
+          6.2524999999999995,
+          14.8015,
+          -0.8529409604846031,
+          0.010759746768367405,
+          6.123233995736766e-17,
+          -6.123233995736765e-17,
+          0.4999815806238549,
+          -0.5000000000000001
+        ],
+        "mean": [
+          6.6619085553278685,
+          11.405296362704918,
+          -0.44650295331284745,
+          -0.01578640390754825,
+          3.640075490574284e-18,
+          -5.2477754989112593e-17,
+          0.35631518503441234,
+          -0.20981702865170693
+        ],
+        "std": [
+          3.9208304867979344,
+          12.956159743672604,
+          0.7431900359674495,
+          0.4980506726963372,
+          0.7071067811865476,
+          0.7071067811865476,
+          0.5682379500808562,
+          0.7114224732812197
+        ],
+        "y_mean": 25.10841811152664,
+        "y_std": 24.63226377138354,
+        "training_power_bound": 102.64700250000001,
+        "training_weather_quantiles": {
+          "WindSpeed": [
+            2.044,
+            12.105800000000002
+          ],
+          "Temperature": [
+            -8.182799999999999,
+            26.953600000000005
+          ]
+        },
+        "cutoffs": [
+          "2020-09-01 00:00:00",
+          "2020-11-01 00:00:00"
+        ],
+        "counts": {
+          "train": {
+            "interval_rows": 23424,
+            "usable_targets": 23400,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 0
+          },
+          "val": {
+            "interval_rows": 5856,
+            "usable_targets": 5832,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 0
+          },
+          "test": {
+            "interval_rows": 5856,
+            "usable_targets": 5832,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 0
+          }
+        },
+        "physics_weather": "last input row after the same masking/imputation as the temporal branch"
+      }
+    },
+    {
+      "audit": {
+        "source_id": "Turbine_4",
+        "domain": "wind",
+        "fixed_year": 2020,
+        "cadence": "15min",
+        "inputs": [
+          {
+            "path": "data/forecasting/raw/wind/Wind 4.xlsx",
+            "sha256": "be8fdf308419134b054cb1ac705851a1d2ddf3caa65b2e1bb457959dc69c1c70"
+          }
+        ],
+        "input_rows": 70176,
+        "invalid_time_rows": 0,
+        "outside_fixed_year_rows": 35040,
+        "duplicate_time_rows": 0,
+        "off_grid_rows": 0,
+        "negative_target_rows": 6404,
+        "invalid_WindSpeed_rows": 0,
+        "invalid_Temperature_rows": 0,
+        "invalid_WindDir_sin_rows": 0,
+        "invalid_WindDir_cos_rows": 0,
+        "grid_rows": 35136,
+        "missing_target_rows": 6404,
+        "missing_input_rows_by_feature": {
+          "WindSpeed": 0,
+          "Temperature": 0,
+          "WindDir_sin": 0,
+          "WindDir_cos": 0,
+          "hour_sin": 0,
+          "hour_cos": 0,
+          "year_sin": 0,
+          "year_cos": 0
+        },
+        "daytime_filter": false,
+        "outlier_filter": "No performance-based filtering; only invalid time/nonfinite and negative generation are excluded."
+      },
+      "training_statistics": {
+        "feature_names": [
+          "WindSpeed",
+          "Temperature",
+          "WindDir_sin",
+          "WindDir_cos",
+          "hour_sin",
+          "hour_cos",
+          "year_sin",
+          "year_cos"
+        ],
+        "sensor_names": [
+          "WindSpeed",
+          "Temperature",
+          "WindDir_sin",
+          "WindDir_cos"
+        ],
+        "median": [
+          5.113,
+          17.375,
+          0.2890317969444717,
+          -0.6507742172658508,
+          6.123233995736766e-17,
+          -6.123233995736765e-17,
+          0.4999815806238549,
+          -0.5000000000000001
+        ],
+        "mean": [
+          5.526247481215846,
+          15.46133341871585,
+          0.2003386443691584,
+          -0.15865896431396867,
+          3.640075490574284e-18,
+          -5.2477754989112593e-17,
+          0.35631518503441234,
+          -0.20981702865170693
+        ],
+        "std": [
+          3.130881779299145,
+          10.005528597737866,
+          0.4914547402652138,
+          0.8325647115305801,
+          0.7071067811865476,
+          0.7071067811865476,
+          0.5682379500808562,
+          0.7114224732812197
+        ],
+        "y_mean": 24.14610236323045,
+        "y_std": 24.159725568395036,
+        "training_power_bound": 98.97993,
+        "training_weather_quantiles": {
+          "WindSpeed": [
+            1.8489000000000007,
+            9.87
+          ],
+          "Temperature": [
+            1.02,
+            27.22
+          ]
+        },
+        "cutoffs": [
+          "2020-09-01 00:00:00",
+          "2020-11-01 00:00:00"
+        ],
+        "counts": {
+          "train": {
+            "interval_rows": 23424,
+            "usable_targets": 19515,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 3885
+          },
+          "val": {
+            "interval_rows": 5856,
+            "usable_targets": 4658,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 1174
+          },
+          "test": {
+            "interval_rows": 5856,
+            "usable_targets": 4491,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 1341
+          }
+        },
+        "physics_weather": "last input row after the same masking/imputation as the temporal branch"
+      }
+    },
+    {
+      "audit": {
+        "source_id": "Turbine_5",
+        "domain": "wind",
+        "fixed_year": 2020,
+        "cadence": "15min",
+        "inputs": [
+          {
+            "path": "data/forecasting/raw/wind/Wind 5.xlsx",
+            "sha256": "ee0189fd4764e017f19cc15054a6945e4c6198fbcfd49221bee987132fb91520"
+          }
+        ],
+        "input_rows": 70176,
+        "invalid_time_rows": 0,
+        "outside_fixed_year_rows": 35040,
+        "duplicate_time_rows": 0,
+        "off_grid_rows": 0,
+        "negative_target_rows": 0,
+        "invalid_WindSpeed_rows": 0,
+        "invalid_Temperature_rows": 0,
+        "invalid_WindDir_sin_rows": 0,
+        "invalid_WindDir_cos_rows": 0,
+        "grid_rows": 35136,
+        "missing_target_rows": 0,
+        "missing_input_rows_by_feature": {
+          "WindSpeed": 0,
+          "Temperature": 0,
+          "WindDir_sin": 0,
+          "WindDir_cos": 0,
+          "hour_sin": 0,
+          "hour_cos": 0,
+          "year_sin": 0,
+          "year_cos": 0
+        },
+        "daytime_filter": false,
+        "outlier_filter": "No performance-based filtering; only invalid time/nonfinite and negative generation are excluded."
+      },
+      "training_statistics": {
+        "feature_names": [
+          "WindSpeed",
+          "Temperature",
+          "WindDir_sin",
+          "WindDir_cos",
+          "hour_sin",
+          "hour_cos",
+          "year_sin",
+          "year_cos"
+        ],
+        "sensor_names": [
+          "WindSpeed",
+          "Temperature",
+          "WindDir_sin",
+          "WindDir_cos"
+        ],
+        "median": [
+          3.967595,
+          17.5,
+          0.0,
+          0.6285265815091245,
+          6.123233995736766e-17,
+          -6.123233995736765e-17,
+          0.4999815806238549,
+          -0.5000000000000001
+        ],
+        "mean": [
+          5.04409729448429,
+          15.53579323202698,
+          -0.03887405256783589,
+          0.1205475954216411,
+          3.640075490574284e-18,
+          -5.2477754989112593e-17,
+          0.35631518503441234,
+          -0.20981702865170693
+        ],
+        "std": [
+          3.6809579236864134,
+          8.605718160388664,
+          0.559612404779709,
+          0.8190183402657627,
+          0.7071067811865476,
+          0.7071067811865476,
+          0.5682379500808562,
+          0.7114224732812197
+        ],
+        "y_mean": 17.115839184981215,
+        "y_std": 20.286202287956726,
+        "training_power_bound": 67.8447,
+        "training_weather_quantiles": {
+          "WindSpeed": [
+            1.304,
+            9.9657999
+          ],
+          "Temperature": [
+            3.276,
+            25.969000100000002
+          ]
+        },
+        "cutoffs": [
+          "2020-09-01 00:00:00",
+          "2020-11-01 00:00:00"
+        ],
+        "counts": {
+          "train": {
+            "interval_rows": 23424,
+            "usable_targets": 23400,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 0
+          },
+          "val": {
+            "interval_rows": 5856,
+            "usable_targets": 5832,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 0
+          },
+          "test": {
+            "interval_rows": 5856,
+            "usable_targets": 5832,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 0
+          }
+        },
+        "physics_weather": "last input row after the same masking/imputation as the temporal branch"
+      }
+    },
+    {
+      "audit": {
+        "source_id": "Turbine_6",
+        "domain": "wind",
+        "fixed_year": 2020,
+        "cadence": "15min",
+        "inputs": [
+          {
+            "path": "data/forecasting/raw/wind/Wind 6.xlsx",
+            "sha256": "225e9c0312e6fc736702a78c43e1c102bdeb7a3d5b4e6de1578ab20e7d589d71"
+          }
+        ],
+        "input_rows": 69999,
+        "invalid_time_rows": 0,
+        "outside_fixed_year_rows": 34863,
+        "duplicate_time_rows": 0,
+        "off_grid_rows": 0,
+        "negative_target_rows": 0,
+        "invalid_WindSpeed_rows": 0,
+        "invalid_Temperature_rows": 0,
+        "invalid_WindDir_sin_rows": 0,
+        "invalid_WindDir_cos_rows": 0,
+        "grid_rows": 35136,
+        "missing_target_rows": 0,
+        "missing_input_rows_by_feature": {
+          "WindSpeed": 0,
+          "Temperature": 386,
+          "WindDir_sin": 0,
+          "WindDir_cos": 0,
+          "hour_sin": 0,
+          "hour_cos": 0,
+          "year_sin": 0,
+          "year_cos": 0
+        },
+        "daytime_filter": false,
+        "outlier_filter": "No performance-based filtering; only invalid time/nonfinite and negative generation are excluded."
+      },
+      "training_statistics": {
+        "feature_names": [
+          "WindSpeed",
+          "Temperature",
+          "WindDir_sin",
+          "WindDir_cos",
+          "hour_sin",
+          "hour_cos",
+          "year_sin",
+          "year_cos"
+        ],
+        "sensor_names": [
+          "WindSpeed",
+          "Temperature",
+          "WindDir_sin",
+          "WindDir_cos"
+        ],
+        "median": [
+          4.0,
+          10.033333,
+          -0.11724851480697991,
+          0.16102967014595285,
+          6.123233995736766e-17,
+          -6.123233995736765e-17,
+          0.4999815806238549,
+          -0.5000000000000001
+        ],
+        "mean": [
+          4.771022710894808,
+          11.699868381745217,
+          -0.058212150930398866,
+          0.05919821719784808,
+          3.640075490574284e-18,
+          -5.2477754989112593e-17,
+          0.35631518503441234,
+          -0.20981702865170693
+        ],
+        "std": [
+          3.196343465250797,
+          9.128162615370211,
+          0.6580358452520524,
+          0.7483954455554028,
+          0.7071067811865476,
+          0.7071067811865476,
+          0.5682379500808562,
+          0.7114224732812197
+        ],
+        "y_mean": 7.100723695696721,
+        "y_std": 10.567905825617306,
+        "training_power_bound": 37.0902,
+        "training_weather_quantiles": {
+          "WindSpeed": [
+            1.533333,
+            9.664666900000006
+          ],
+          "Temperature": [
+            0.0,
+            23.113333
+          ]
+        },
+        "cutoffs": [
+          "2020-09-01 00:00:00",
+          "2020-11-01 00:00:00"
+        ],
+        "counts": {
+          "train": {
+            "interval_rows": 23424,
+            "usable_targets": 23400,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 0
+          },
+          "val": {
+            "interval_rows": 5856,
+            "usable_targets": 5832,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 0
+          },
+          "test": {
+            "interval_rows": 5856,
+            "usable_targets": 5832,
+            "warmup_rows_excluded": 24,
+            "invalid_target_windows": 0
+          }
+        },
+        "physics_weather": "last input row after the same masking/imputation as the temporal branch"
+      }
+    }
+  ]
+}

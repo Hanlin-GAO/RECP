@@ -1,0 +1,137 @@
+{
+  "row": {
+    "group": "G6",
+    "period": "NN",
+    "init": "M",
+    "rover_mae": 0.0022120595358223354,
+    "rover_rmse": 0.0024737366782923635,
+    "drone_mae": 0.025546358608791012,
+    "drone_rmse": 0.028624803405523345,
+    "station_mae": 0.013858875577533248,
+    "station_rmse": 0.0176027944404721,
+    "cr_r": 91.0089224433768,
+    "cr_d": 100.0,
+    "epsilon_e": 10.673511315747836,
+    "actual_explore_completed": 11656,
+    "pred_explore_completed": 10608,
+    "actual_transport_completed": 17,
+    "pred_transport_completed": 19,
+    "actual_station_energy_kwh": 0.045396911111111105,
+    "pred_station_energy_kwh": 0.040551466666666675
+  },
+  "entity_errors": {
+    "rovers": [
+      {
+        "name": "Explore-Inner",
+        "mae": 4.510233918115592e-06,
+        "rmse": 4.510233918115592e-06
+      },
+      {
+        "name": "Explore-Mid",
+        "mae": 0.0030506081989789594,
+        "rmse": 0.003239141928391424
+      },
+      {
+        "name": "Explore-Outer",
+        "mae": 0.0035810601745699324,
+        "rmse": 0.0041775578725675505
+      }
+    ],
+    "drones": [
+      {
+        "name": "Drone-3m",
+        "mae": 0.03847562630242628,
+        "rmse": 0.044086464089747715
+      },
+      {
+        "name": "Drone-6m",
+        "mae": 0.028047999234568136,
+        "rmse": 0.031202383371229613
+      },
+      {
+        "name": "Drone-9m",
+        "mae": 0.010115450289378625,
+        "rmse": 0.010585562755592711
+      }
+    ],
+    "stations": [
+      {
+        "name": "S0",
+        "mae": 0.019964099405278376,
+        "rmse": 0.027730060883537633
+      },
+      {
+        "name": "S1",
+        "mae": 0.018350745877555693,
+        "rmse": 0.02090366977079734
+      },
+      {
+        "name": "S2",
+        "mae": 0.003261781449765673,
+        "rmse": 0.00417465266708133
+      }
+    ]
+  },
+  "period_start": {
+    "pv": "2023-06-01 11:00:00",
+    "wind": "2020-06-01 11:00:00"
+  },
+  "init_config": {
+    "rovers": [
+      0.28,
+      0.36,
+      0.44
+    ],
+    "drones": [
+      0.68,
+      0.5,
+      0.36
+    ],
+    "stations": [
+      0.6,
+      0.55,
+      0.65
+    ]
+  },
+  "vehicle_output_interface": {
+    "actual": {
+      "vehicle_output_mode": "measured_experiment_power",
+      "renewable_kind": "actual",
+      "sample_interval_s": 5.0,
+      "unit_conversion": "W->kW (divided by 1000)",
+      "vehicle_csv": "power_25min_5s_all_vehicles.csv",
+      "drone_csv": "power_25min_5s_all_drones.csv",
+      "explore_vehicle_columns": [
+        "noon4",
+        "noon5",
+        "noon6"
+      ],
+      "transport_drone_columns": [
+        "noon4",
+        "noon5",
+        "noon6"
+      ],
+      "note": "Actual case drives rover/drone WORK-phase load from the period+SoC-level measured output-power columns; predicted case drives it from the indoor-proxy 'normal' column. Drone leg timing still follows transport_power_profile_kW; only the work-phase load magnitude comes from the measured experiment trace."
+    },
+    "predicted": {
+      "vehicle_output_mode": "measured_experiment_power",
+      "renewable_kind": "predicted",
+      "sample_interval_s": 5.0,
+      "unit_conversion": "W->kW (divided by 1000)",
+      "vehicle_csv": "power_25min_5s_all_vehicles.csv",
+      "drone_csv": "power_25min_5s_all_drones.csv",
+      "explore_vehicle_columns": [
+        "normal",
+        "normal",
+        "normal"
+      ],
+      "transport_drone_columns": [
+        "normal",
+        "normal",
+        "normal"
+      ],
+      "note": "Actual case drives rover/drone WORK-phase load from the period+SoC-level measured output-power columns; predicted case drives it from the indoor-proxy 'normal' column. Drone leg timing still follows transport_power_profile_kW; only the work-phase load magnitude comes from the measured experiment trace."
+    }
+  },
+  "comparison_note": "Paired trial: the actual case drives station renewable input with measured generation and rover/drone WORK load with the measured period+SoC-level output power; the predicted case uses forecast generation and the indoor-proxy 'normal' output power. Rover/drone MAE/RMSE therefore capture the SoC gap between measured and proxy vehicle output power."
+}

@@ -1,0 +1,81 @@
+{
+  "group": "G2",
+  "period": "AM",
+  "period_start": {
+    "pv": "2023-06-01 07:30:00",
+    "wind": "2020-06-01 07:30:00"
+  },
+  "init_tag": "M",
+  "init_config": {
+    "rovers": [
+      0.28,
+      0.36,
+      0.44
+    ],
+    "drones": [
+      0.68,
+      0.5,
+      0.36
+    ],
+    "stations": [
+      0.6,
+      0.55,
+      0.65
+    ]
+  },
+  "renewable_case": "predicted_generation",
+  "renewable_kind": "predicted",
+  "dt_hours": 2.777777777777778e-05,
+  "n_steps": 10600,
+  "horizon_minutes": 17.666666666666668,
+  "scene_source_file": "/home/amdt/GHL_code/VSgo/定位/first_frame_outputs/地形边界.json",
+  "manual_routes_file": "/home/amdt/GHL_code/VSgo/定位/first_frame_outputs/manual_routes_annotations.json",
+  "station_sources": [
+    {
+      "id": 0,
+      "renewable_label": "PV forecast",
+      "renewable_source_name": "Inverter_1",
+      "renewable_start_time": "2023-06-01 07:30:00",
+      "renewable_scale_ratio": 3.963299843449656e-06,
+      "renewable_domain": "pv",
+      "renewable_model_tag": "pinn"
+    },
+    {
+      "id": 1,
+      "renewable_label": "Wind forecast",
+      "renewable_source_name": "Turbine_2",
+      "renewable_start_time": "2020-06-01 07:30:00",
+      "renewable_scale_ratio": 0.00212164223595632,
+      "renewable_domain": "wind",
+      "renewable_model_tag": "pinn"
+    },
+    {
+      "id": 2,
+      "renewable_label": "PV forecast",
+      "renewable_source_name": "Inverter_3",
+      "renewable_start_time": "2023-06-01 07:30:00",
+      "renewable_scale_ratio": 3.986763943706894e-06,
+      "renewable_domain": "pv",
+      "renewable_model_tag": "pinn"
+    }
+  ],
+  "vehicle_output_interface": {
+    "vehicle_output_mode": "measured_experiment_power",
+    "renewable_kind": "predicted",
+    "sample_interval_s": 5.0,
+    "unit_conversion": "W->kW (divided by 1000)",
+    "vehicle_csv": "power_25min_5s_all_vehicles.csv",
+    "drone_csv": "power_25min_5s_all_drones.csv",
+    "explore_vehicle_columns": [
+      "normal",
+      "normal",
+      "normal"
+    ],
+    "transport_drone_columns": [
+      "normal",
+      "normal",
+      "normal"
+    ],
+    "note": "Actual case drives rover/drone WORK-phase load from the period+SoC-level measured output-power columns; predicted case drives it from the indoor-proxy 'normal' column. Drone leg timing still follows transport_power_profile_kW; only the work-phase load magnitude comes from the measured experiment trace."
+  }
+}

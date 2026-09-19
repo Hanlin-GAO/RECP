@@ -1,0 +1,4 @@
+﻿file,target_height_m,original_duration_s,aligned_duration_s,takeoff_progress,ascent_end_progress,descent_start_progress,touchdown_progress,hover_power_w
+May-9th-2026-06-19PM-Flight-Airdata-3m-idealized.csv,3.0,52.9,52.9,0.05671,0.21928,0.84121,0.95085,93.02
+May-9th-2026-06-20PM-Flight-Airdata-6m-idealized.csv,6.0,47.9,52.9,0.06263,0.24426,0.77871,0.97495,93.878
+May-9th-2026-06-21PM-Flight-Airdata-9m-idealized.csv,9.0,49.9,52.9,0.06212,0.16032,0.67735,0.97996,92.936
